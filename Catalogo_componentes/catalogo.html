@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - BuildMyPC</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h2>BuildMyPC</h2></div>
+            <ul>
+                <li><a href="../inicio/index.html">Inicio</a></li>
+                <li><a href="../Catalogo_componentes/catalogo.html">Catálogo</a></li>
+                <li><a href="../Armador_build/armador.html">Armador</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="layout-con-sidebar">
+        <aside class="filtros">
+            <section class="tarjeta">
+                <h3>Filtros</h3>
+                <div class="formulario-grupo">
+                    <label for="buscar">Buscar componente</label>
+                    <input type="text" id="buscar" placeholder="Ej: RTX 4060">
+                </div>
+                <div class="formulario-grupo">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria">
+                        <option value="todos">Todos</option>
+                        <option value="cpu">Procesadores</option>
+                        <option value="gpu">Tarjetas Gráficas</option>
+                    </select>
+                </div>
+                <div class="formulario-grupo">
+                    <label>Rango de Precio</label>
+                    <input type="number" id="precio-min" placeholder="Mínimo">
+                    <input type="number" id="precio-max" placeholder="Máximo" style="margin-top: 0.5rem;">
+                </div>
+                <button class="btn-acento">Aplicar Filtros</button>
+            </section>
+        </aside>
+        <section class="resultados-catalogo">
+            <h2>Catálogo de Componentes</h2>
+            <div class="grid-catalogo" id="grid-componentes">
+                <article class="tarjeta">
+                    <img src="placeholder-cpu.jpg" alt="Procesador AMD Ryzen 5">
+                    <h3>AMD Ryzen 5 7600X</h3>
+                    <p>Procesadores</p>
+                    <p><strong>$250.000</strong></p>
+                    <a href="../Detalle_componente/detalle.html" class="btn-primario">Ver Detalle</a>
+                </article>
+                <article class="tarjeta descontinuado">
+                    <img src="placeholder-gpu.jpg" alt="NVIDIA GTX 1060">
+                    <h3>NVIDIA GTX 1060</h3>
+                    <p>Tarjetas Gráficas - <strong>Descontinuado</strong></p>
+                    <p><strong>$120.000</strong></p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 BuildMyPC.</p>
+    </footer>
+    <script src="catalogo.js"></script>
+    <script src="../JS/datos.js"></script>
+</body>
+</html>
