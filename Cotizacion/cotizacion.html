@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotización - BuildMyPC</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h2>BuildMyPC</h2></div>
+            <ul>
+                <li><a href="../inicio/index.html">Inicio</a></li>
+                <li><a href="../Catalogo_componentes/catalogo.html">Catálogo</a></li>
+                <li><a href="../Armador_build/armador.html">Armador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout-con-sidebar">
+        <section class="detalle-cotizacion">
+            <h2>Detalle de Cotización</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Modelo</th>
+                        <th>Precio Unitario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CPU</td>
+                        <td>AMD Ryzen 5 7600X</td>
+                        <td>$250.000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" style="text-align: right;">Subtotal:</th>
+                        <th>$250.000</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" style="text-align: right;">Total Final:</th>
+                        <th style="color: var(--color-acento);">$250.000</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Válida hasta: 14 de Septiembre de 2026</p>
+        </section>
+
+        <section class="formulario-solicitud tarjeta">
+            <h3>Solicitar Cotización</h3>
+            <form id="form-cotizacion" novalidate>
+                <div class="formulario-grupo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Ingresa tu nombre">
+                    <span class="mensaje-error" id="error-nombre">El nombre es obligatorio.</span>
+                </div>
+                
+                <div class="formulario-grupo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required placeholder="ejemplo@correo.com">
+                    <span class="mensaje-error" id="error-correo">Formato de correo inválido.</span>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" required placeholder="Ej: 987654321">
+                    <span class="mensaje-error" id="error-telefono">Debe contener 9 dígitos numéricos.</span>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="comentarios">Comentarios Adicionales</label>
+                    <textarea id="comentarios" name="comentarios" rows="3" placeholder="¿Necesitas armado físico?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primario" style="width: 100%;">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BuildMyPC.</p>
+    </footer>
+</body>
+</html>
