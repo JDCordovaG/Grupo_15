@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Armador - BuildMyPC</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h2>BuildMyPC</h2></div>
+            <ul>
+                <li><a href="../inicio/index.html">Inicio</a></li>
+                <li><a href="../Catalogo_componentes/catalogo.html">Catálogo</a></li>
+                <li><a href="../Armador_build/armador.html">Armador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout-con-sidebar">
+        <section class="seleccion-componentes">
+            <h2>Selecciona tus Componentes</h2>
+            <div class="formulario-grupo">
+                <label for="select-cpu">Procesador (CPU)</label>
+                <select id="select-cpu">
+                    <option value="">Seleccionar CPU...</option>
+                </select>
+            </div>
+            <div class="formulario-grupo">
+                <label for="select-gpu">Tarjeta Gráfica (GPU)</label>
+                <select id="select-gpu">
+                    <option value="">Seleccionar GPU...</option>
+                </select>
+            </div>
+            <div class="formulario-grupo">
+                <label for="select-mb">Placa Madre</label>
+                <select id="select-mb">
+                    <option value="">Seleccionar Placa...</option>
+                </select>
+            </div>
+            <div class="formulario-grupo">
+                <label for="select-ram">Memoria RAM</label>
+                <select id="select-ram">
+                    <option value="">Seleccionar RAM...</option>
+                </select>
+            </div>
+            <div class="formulario-grupo">
+                <label for="select-psu">Fuente de Poder</label>
+                <select id="select-psu">
+                    <option value="">Seleccionar Fuente...</option>
+                </select>
+            </div>
+        </section>
+
+        <aside class="resumen-build">
+            <section class="tarjeta">
+                <h3>Resumen de Build</h3>
+                <p>Estado: <strong>Borrador</strong></p>
+                <p>Consumo Estimado: <span id="watts-total">0</span> W</p>
+                <hr style="margin: 1rem 0; border-color: var(--color-primario);">
+                <p style="font-size: 1.25rem;">Total Parcial: $<span id="precio-total">0</span></p>
+                <a href="../Resultado_compatibilidad_rendimiento/resultado.html" class="btn-primario" style="margin-top: 1rem; display: block;">Validar Compatibilidad</a>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BuildMyPC.</p>
+    </footer>
+</body>
+</html>
